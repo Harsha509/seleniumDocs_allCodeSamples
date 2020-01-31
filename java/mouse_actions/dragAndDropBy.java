@@ -9,13 +9,13 @@ public class dragAndDropBy {
     WebDriver driver = new ChromeDriver();
     try {
       // Navigate to Url
-      driver.get("https://the-internet.herokuapp.com/drag_and_drop");
+      driver.get("https://crossbrowsertesting.github.io/drag-and-drop");
 
       // Store 'box A' as source element
-      WebElement sourceEle = driver.findElement(By.id("column-a"));
+      WebElement sourceEle = driver.findElement(By.id("draggable"));
 
       // Store 'box B' as source element
-      WebElement targetEle = driver.findElement(By.id("column-b"));
+      WebElement targetEle = driver.findElement(By.id("droppable"));
       int targetEleXOffset = targetEle.getLocation().getX();
       int targetEleYOffset = targetEle.getLocation().getY();
 
